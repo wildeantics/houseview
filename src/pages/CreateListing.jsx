@@ -106,7 +106,6 @@ function CreateListing() {
       if (location === undefined || location.includes('undefined')) {
         setLoading(false)
         toast.error('Please enter a correct address')
-        console.log(address, location)
         return
       }
     } else {
