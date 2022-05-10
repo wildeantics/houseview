@@ -469,14 +469,18 @@ button {
 
 .categoryListingImg {
   width: 30%;
-  height: 100px;
+  height: 100%;
   border-radius: 1.5rem;
   object-fit: cover;
 }
 @media (min-width: 1024px) {
   .categoryListingImg {
     width: 19%;
-    height: 217px;
+  }
+}
+@media (max-width: 480px) {
+  .categoryListingImg {
+    height: 125px;
   }
 }
 
@@ -724,6 +728,7 @@ button {
   margin: 0.3rem 0;
   font-weight: 600;
   width: 100%;
+  font-family: 'Montserrat', sans-serif;
 }
 .profileNameActive {
   background-color: rgba(44, 44, 44, 0.1);
@@ -880,4 +885,8 @@ button {
   margin-top: 0.5rem;
   padding-top: 0.5rem;
   font-weight: 600;
+}
+
+.listingsList {
+  padding-left: 0;
 }
